@@ -39,6 +39,13 @@ public class ItemTestCase {
         Assert.assertEquals(testDate, item.getExpirationDate());
     }
 
+    @Test
+    public void testSetGetItemPrice() {
+        int testPrice = 100;
+        item.setPrice(testPrice);
+        Assert.assertEquals(testPrice, item.getPrice());
+    }
+
     @After
     public void tearDown() throws Exception {
 

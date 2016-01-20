@@ -10,6 +10,7 @@ public class Item {
     private String itemName;
     private String produserName;
     private Date expirationDate;
+    private int price;
 
     public void setItemName(String itemName) {
         this.itemName = itemName;
@@ -33,5 +34,13 @@ public class Item {
 
     public Date getExpirationDate() {
         return this.expirationDate;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getPrice() {
+        return this.price;
     }
 }
